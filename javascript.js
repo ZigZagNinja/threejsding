@@ -18,7 +18,7 @@ document.addEventListener('rezise', function(){
 
 
 
-var loader = new THREE.ObjectLoader();
+/*var loader = new THREE.ObjectLoader();
 
 loader.load(
 	// resource URL
@@ -40,7 +40,7 @@ loader.load(
 	function ( err ) {
 		console.error( 'An error happened' );
 	}
-);
+);*/
  
 
 
@@ -85,7 +85,7 @@ camera.position.z = 3;
 var lightBox = new THREE.BoxGeometry(1, 1, 1);
 var lightBoxCube = new THREE.Mesh(lightBox, cubeMaterialsBasic);
 lightBoxCube.position.set(2,2,2);
-//scene.add(lightBoxCube);
+scene.add(lightBoxCube);
 
 
 //light
