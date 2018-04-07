@@ -74,7 +74,7 @@ var cubeMaterialsBasic =
 
 //create material etc.
 var cube = new THREE.Mesh(geometry, cubeMaterials);
-//scene.add(cube);
+scene.add(cube);
 
 camera.position.z = 3;
 
@@ -100,7 +100,7 @@ var pointLight = new THREE.PointLight(0xFFFFFF, 5, 50);
 pointLight.position.x = 2;
 pointLight.position.y = 2;
 pointLight.position.z = 2;
-//scene.add(pointLight);
+scene.add(pointLight);
 
 
 
