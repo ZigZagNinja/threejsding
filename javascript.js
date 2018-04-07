@@ -32,8 +32,7 @@ var cubeMaterials =
 ]
 
 //create material etc.
-var material = new THREE.MeshBasicMaterial({color: 0x0FF00, wireframe: false});
-var cube = new THREE.Mesh(geometry, material);
+var cube = new THREE.Mesh(geometry, cubeMaterials);
 scene.add(cube);
 
 camera.position.z = 3;
@@ -66,3 +65,4 @@ var Gameloop = function(){
 	
 
 Gameloop();
+
