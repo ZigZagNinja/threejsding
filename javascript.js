@@ -71,9 +71,18 @@ var cubeMaterialsBasic =
  	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}), //FRONT
  	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}) //BACK
 ]
+var cubeMaterialsImage = 
+[
+ 	new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('/images/dart.jpg')side: THREE.DoubleSide}), //RIGHT
+ 	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}), //LEFT
+ 	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}), //TOP
+ 	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}), //BOTTOM
+ 	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}), //FRONT
+ 	new THREE.MeshBasicMaterial({color: 0xFFFFFF, side: THREE.DoubleSide}) //BACK
+]
 
 //create material etc.
-var cube = new THREE.Mesh(geometry, cubeMaterials);
+var cube = new THREE.Mesh(geometry, cubeMaterialsImage);
 scene.add(cube);
 
 camera.position.z = 3;
