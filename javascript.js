@@ -122,9 +122,12 @@ var update = function(){
 	pointLight.position.y = Math.cos(time* 0.02)*20;
 	pointLight.position.z = Math.cos(time* 0.02)*10;
 
-	//rotation
-	/*cube.rotation.x += 0.01;
-	cube.rotation.y += 0.005;*/
+	//rotation lightbulb cube
+	lightBoxCube.position.x = Math.sin(time* 0.02)*10;
+        lightBoxCube.position.y = Math.cos(time* 0.02)*20;
+	lightBoxCube.position.z = Math.cos(time* 0.02)*10;
+	
+	
 }
 
 
